@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.svg"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@24.7.0/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+   <section class="wrapper-header"style="background-image: url(images/contacts.jpg);">
+    <header class="header">
+        <div class="header__content container">
+            <a href="index.html" class="header-content__logo">
+                <img src="images/logo.svg" alt="">
+            </a>
+            <div class="header-content__menu">
+                <ul class="header-menu__list">
+                    <li class="header-list__item"><a href="/products.html" class="header-item__link">Продукция</a></li>
+                    <li class="header-list__item"><a href="/about.html" class="header-item__link">О компании</a></li>
+                    <li class="header-list__item"><a href="News-promotions.html" class="header-item__link">Новости и акции</a></li>
+                    <li class="header-list__item"><a href="contacts.html" class="header-item__link">Контакты</a></li>
+                </ul>
+                <button class="header-menu__btn btn btn-popup" data-target="#modal1">Связаться с нами</button>
+                <div class="header-menu__translate">
+                    <a href="#" class="header-translate__ru">RU</a>
+                    <a href="#" class="header-translate__ru uz">UZ</a>
+                </div>
+            </div>
+            <div class="header-content__mobil">
+                <div class="header__mobil-burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__mobil-menu">
+                    <div class="header__mobil">
+                        <ul class="header-mobil__list">
+                            <li class="header-list__item"><a href="/products.html" class="header-item__link">Продукция</a></li>
+                            <li class="header-list__item"><a href="/about.html" class="header-item__link">О компании</a></li>
+                            <li class="header-list__item"><a href="News-promotions.html" class="header-item__link">Новости и акции</a></li>
+                            <li class="header-list__item"><a href="contacts.html" class="header-item__link">Контакты</a></li>
+                        </ul>
+                        <button class="header-menu__btn btn btn-popup" data-target="#modal1">Связаться с нами</button>
+                        <div class="header-menu__translate">
+                            <a href="#" class="header-translate__ru">RU</a>
+                            <a href="#" class="header-translate__ru uz">UZ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> 
+    <section class="main-products" >
+        <div class="main-products__content container">
+            <div class="main-products-content__info">
+                <h2 class="main-products-info__title">Контакты</h2>
+                <ul class="main-products-info__item">
+                    <li class="main-products-item__list"><a href="index.html" class="main-products-list__link">Главная </a></li>
+                    <span></span>
+                    <li class="main-products-item__list"><a href="#" class="main-products-list__link">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="popup" id="modal1" style="display: none;">
+        <div class="popup__content">
+            <button class="closePopup" type="button" id="closePopup" class="closePopup">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 0C7.60962 0 0 7.61175 0 17C0 26.3883 7.60962 34 17 34C26.3904 34 34 26.3883 34 17C34 7.61175 26.3904 0 17 0ZM24.8774 21.8726C25.2758 22.2711 25.4997 22.8115 25.4997 23.375C25.4997 23.9385 25.2758 24.4789 24.8774 24.8774C24.4789 25.2758 23.9385 25.4997 23.375 25.4997C22.8115 25.4997 22.2711 25.2758 21.8726 24.8774L17 20.0047L12.1274 24.8774C11.9305 25.0754 11.6964 25.2325 11.4386 25.3398C11.1807 25.447 10.9042 25.5022 10.625 25.5022C10.3458 25.5022 10.0693 25.447 9.81144 25.3398C9.55361 25.2325 9.31951 25.0754 9.12263 24.8774C8.92512 24.6802 8.76842 24.446 8.66151 24.1882C8.5546 23.9304 8.49957 23.6541 8.49957 23.375C8.49957 23.0959 8.5546 22.8196 8.66151 22.5618C8.76842 22.304 8.92512 22.0698 9.12263 21.8726L13.9953 17L9.12263 12.1274C8.72417 11.7289 8.50032 11.1885 8.50032 10.625C8.50032 10.0615 8.72417 9.52108 9.12263 9.12263C9.52108 8.72417 10.0615 8.50032 10.625 8.50032C11.1885 8.50032 11.7289 8.72417 12.1274 9.12263L17 13.9953L21.8726 9.12263C22.2711 8.72417 22.8115 8.50032 23.375 8.50032C23.9385 8.50032 24.4789 8.72417 24.8774 9.12263C25.2758 9.52108 25.4997 10.0615 25.4997 10.625C25.4997 11.1885 25.2758 11.7289 24.8774 12.1274L20.0047 17L24.8774 21.8726Z" fill="#303849" />
+                  </svg>
+            </button>
+          <div class="popup__content-body">
+            <div class="popup-body__info">
+              <h2 class="popup-info__title title">Оставьте заявку, чтобы получить консультацию</h2>
+            </div>
+            <form class="popup-body__form">
+              <fieldset class="popup__body-form">
+                <div class="popup-form__body">
+                  <label class="popup-form__label" for="name">Имя*</label>
+                  <input class="popup-form-input" type="text" name="name" required placeholder="Ваше имя">
+                </div>
+                <div class="popup-form__body">
+                  <label class="popup-form__label" for="phone">Телефон*</label>
+                  <input class="popup-form-input phone" type="tel" name="tel" required>
+                </div>
+                <button class="popup__button btn" type="submit">Отправить</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+    </div>
+   </section>
+   <section class="contacts contacts-top">
+    <div class="contacts__content container">
+        <div class="contacts__content-feedback">
+            <h5 class="contacts__feedback-name">Обратная связь</h5>
+            <form class="contacts__feedback-form" id="myForm"  action="kiranosend.php" method="post">
+                <div class="contacts-form__body" role="form" aria-labelledby="registrationHeading">
+                <fieldset class="contacts-form__body-form"> 
+                    <div class="contacts-application__form-body">
+                        <label class="contacts-form__label" for="name">Имя</label>
+                        <input class="contacts-form-input" type="text" name="name" required  aria-required="true" autocomplete="name"  placeholder="Ваше имя">
+                    </div>                                                          
+                    <div class="contacts-application__form-body">
+                        <label class="contacts-form__label" for="phone">Телефон*</label>
+                        <input class="contacts-form-input phone" type="phone" required  name="tel" aria-required="true" autocomplete="tel">
+                    </div>                                    
+                    <div class="contacts-application__form-body">
+                        <label class="contacts-form__label" for="phone">Сообщение</label>
+                        <textarea class="contacts-form-input message" name="message" placeholder="Ваше сообщение" required></textarea>
+                    </div>                                    
+                    <button class="contacts-form__button btn" type="submit" id="submit1">Oтправить</button>
+                </fieldset>
+                </div>
+            </form>
+        </div>
+        <div class="contacts__content-maps">
+            <h5 class="contacts__maps-name">свяжитесь с нами любым удобным способом</h5>
+            <div class="contacts__maps-info">
+                <li class="contacts__info-list">
+                    <a href="#" class="contacts__list-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 11.4C11.1949 11.4 10.4227 11.0839 9.85343 10.5213C9.28412 9.95871 8.96429 9.19565 8.96429 8.4C8.96429 7.60435 9.28412 6.84129 9.85343 6.27868C10.4227 5.71607 11.1949 5.4 12 5.4C12.8051 5.4 13.5773 5.71607 14.1466 6.27868C14.7159 6.84129 15.0357 7.60435 15.0357 8.4C15.0357 8.79397 14.9572 9.18407 14.8046 9.54805C14.6521 9.91203 14.4285 10.2427 14.1466 10.5213C13.8647 10.7999 13.53 11.0209 13.1617 11.1716C12.7934 11.3224 12.3987 11.4 12 11.4ZM12 0C9.74566 0 7.58365 0.884997 5.98959 2.4603C4.39553 4.03561 3.5 6.17218 3.5 8.4C3.5 14.7 12 24 12 24C12 24 20.5 14.7 20.5 8.4C20.5 6.17218 19.6045 4.03561 18.0104 2.4603C16.4163 0.884997 14.2543 0 12 0Z" fill="#F04F20" />
+                        </svg>
+                        Мирзо-Улугбекский р-й, проспект Мустакиллик 2/9
+                    </a>
+                </li>
+                <li class="contacts__info-list">
+                    <a href="tel:+998999303999" class="contacts__list-link">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6326 15.6665L15.0689 11.5171C14.8532 11.321 14.5697 11.2165 14.2783 11.2255C13.9869 11.2345 13.7105 11.3564 13.5073 11.5654L10.8207 14.3283C10.174 14.2048 8.87396 13.7995 7.53573 12.4646C6.1975 11.1253 5.79221 9.82189 5.67209 9.17972L8.43275 6.49205C8.64203 6.28899 8.76409 6.01247 8.7731 5.72101C8.78211 5.42955 8.67737 5.14601 8.48103 4.93042L4.33273 0.36789C4.13631 0.151615 3.86332 0.0204285 3.57173 0.00219121C3.28014 -0.016046 2.99292 0.0801029 2.77109 0.270218L0.334875 2.3595C0.140776 2.5543 0.0249252 2.81357 0.00929798 3.08812C-0.00754219 3.36878 -0.328628 10.0172 4.82671 15.1748C9.32416 19.6711 14.9578 20 16.5093 20C16.7361 20 16.8753 19.9933 16.9123 19.991C17.1868 19.9757 17.446 19.8593 17.6398 19.6643L19.728 17.227C19.9189 17.0059 20.0157 16.7189 19.9979 16.4273C19.9801 16.1358 19.849 15.8627 19.6326 15.6665Z" fill="#F04F20" />
+                        </svg>
+                        +998 99 9303999
+                    </a>
+                </li>
+                <li class="contacts__info-list">
+                    <a href="#" class="contacts__list-link">
+                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM17.6 4.25L10.53 8.67C10.21 8.87 9.79 8.87 9.47 8.67L2.4 4.25C2.29973 4.19371 2.21192 4.11766 2.14189 4.02645C2.07186 3.93525 2.02106 3.83078 1.99258 3.71937C1.96409 3.60796 1.9585 3.49194 1.97616 3.37831C1.99381 3.26468 2.03434 3.15581 2.09528 3.0583C2.15623 2.96079 2.23632 2.87666 2.33073 2.811C2.42513 2.74533 2.53187 2.69951 2.6445 2.6763C2.75712 2.65309 2.87328 2.65297 2.98595 2.67595C3.09863 2.69893 3.20546 2.74453 3.3 2.81L10 7L16.7 2.81C16.7945 2.74453 16.9014 2.69893 17.014 2.67595C17.1267 2.65297 17.2429 2.65309 17.3555 2.6763C17.4681 2.69951 17.5749 2.74533 17.6693 2.811C17.7637 2.87666 17.8438 2.96079 17.9047 3.0583C17.9657 3.15581 18.0062 3.26468 18.0238 3.37831C18.0415 3.49194 18.0359 3.60796 18.0074 3.71937C17.9789 3.83078 17.9281 3.93525 17.8581 4.02645C17.7881 4.11766 17.7003 4.19371 17.6 4.25Z" fill="#F04F20" />
+                        </svg>
+                        metaleast@gmail.com
+                    </a>
+                </li>
+            </div>
+        </div>
+    </div>
+   </section>
+   <footer class="footer">
+    <div class="footer__content">
+        <div class="footer-content__top  container">
+            <div class="footer-content__logo">
+                <a href="index.html" class="footer-logo__link">
+                    <img src="images/logo.svg" alt="">
+                </a>
+                <p class="footer-logo__text">Многопрофильная компания по реализации металлопроката и изделий из металла</p>         
+            </div>
+            <ul class="footer-content__menu">
+                <li class="header-list__item"><a href="products.html" class="header-item__link">Продукция</a></li>
+                    <li class="header-list__item"><a href="about.html" class="header-item__link">О компании</a></li>
+                    <li class="header-list__item"><a href="News-promotions.html" class="header-item__link">Новости и акции</a></li>
+                    <li class="header-list__item"><a href="#" class="header-item__link">Контакты</a></li>
+            </ul>
+            <div class="footer-content__contacts">
+                <h5 class="footer-contacts__name"> <span>свяжитесь </span>с нами</h5>
+                <div class="footer-contacts__list">
+                    <a href="#" class="footer-list__link">
+                        <svg width="18" height="25" viewBox="0 0 18 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 11.5025C8.19488 11.5025 7.42273 11.1865 6.85343 10.6239C6.28412 10.0613 5.96429 9.29819 5.96429 8.50254C5.96429 7.70689 6.28412 6.94383 6.85343 6.38122C7.42273 5.81861 8.19488 5.50254 9 5.50254C9.80512 5.50254 10.5773 5.81861 11.1466 6.38122C11.7159 6.94383 12.0357 7.70689 12.0357 8.50254C12.0357 8.89651 11.9572 9.28661 11.8046 9.65059C11.6521 10.0146 11.4285 10.3453 11.1466 10.6239C10.8647 10.9024 10.53 11.1234 10.1617 11.2742C9.79341 11.4249 9.39866 11.5025 9 11.5025ZM9 0.102539C6.74566 0.102539 4.58365 0.987536 2.98959 2.56284C1.39553 4.13815 0.5 6.27472 0.5 8.50254C0.5 14.8025 9 24.1025 9 24.1025C9 24.1025 17.5 14.8025 17.5 8.50254C17.5 6.27472 16.6045 4.13815 15.0104 2.56284C13.4163 0.987536 11.2543 0.102539 9 0.102539Z" fill="#F04F20" />
+                        </svg>
+                        Мирзо-Улугбекский р-й, проспект Мустакиллик 2/9
+                    </a>
+                    <a href="tel:+998999303999" class="footer-list__link">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.6326 15.769L15.0689 11.6197C14.8532 11.4236 14.5697 11.319 14.2783 11.328C13.9869 11.337 13.7105 11.4589 13.5073 11.6679L10.8207 14.4308C10.174 14.3073 8.87396 13.902 7.53573 12.5672C6.1975 11.2278 5.79221 9.92442 5.67209 9.28226L8.43275 6.59459C8.64203 6.39153 8.76409 6.11501 8.7731 5.82355C8.78211 5.53208 8.67737 5.24855 8.48103 5.03296L4.33273 0.470429C4.13631 0.254154 3.86332 0.122968 3.57173 0.10473C3.28014 0.086493 2.99292 0.182642 2.77109 0.372757L0.334875 2.46204C0.140776 2.65684 0.0249252 2.91611 0.00929798 3.19066C-0.00754219 3.47132 -0.328628 10.1198 4.82671 15.2773C9.32416 19.7736 14.9578 20.1025 16.5093 20.1025C16.7361 20.1025 16.8753 20.0958 16.9123 20.0936C17.1868 20.0782 17.446 19.9618 17.6398 19.7669L19.728 17.3295C19.9189 17.1084 20.0157 16.8214 19.9979 16.5299C19.9801 16.2383 19.849 15.9653 19.6326 15.769Z" fill="#F04F20" />
+                          </svg>
+                          +998 99 9303999
+                    </a>
+                    <a href="#" class="footer-list__link">
+                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4.10254H4C2.9 4.10254 2.01 5.00254 2.01 6.10254L2 18.1025C2 19.2025 2.9 20.1025 4 20.1025H20C21.1 20.1025 22 19.2025 22 18.1025V6.10254C22 5.00254 21.1 4.10254 20 4.10254ZM19.6 8.35254L12.53 12.7725C12.21 12.9725 11.79 12.9725 11.47 12.7725L4.4 8.35254C4.29973 8.29625 4.21192 8.2202 4.14189 8.12899C4.07186 8.03779 4.02106 7.93332 3.99258 7.82191C3.96409 7.7105 3.9585 7.59447 3.97616 7.48085C3.99381 7.36722 4.03434 7.25835 4.09528 7.16084C4.15623 7.06333 4.23632 6.97919 4.33073 6.91353C4.42513 6.84787 4.53187 6.80205 4.6445 6.77884C4.75712 6.75563 4.87328 6.75551 4.98595 6.77849C5.09863 6.80147 5.20546 6.84707 5.3 6.91254L12 11.1025L18.7 6.91254C18.7945 6.84707 18.9014 6.80147 19.014 6.77849C19.1267 6.75551 19.2429 6.75563 19.3555 6.77884C19.4681 6.80205 19.5749 6.84787 19.6693 6.91353C19.7637 6.97919 19.8438 7.06333 19.9047 7.16084C19.9657 7.25835 20.0062 7.36722 20.0238 7.48085C20.0415 7.59447 20.0359 7.7105 20.0074 7.82191C19.9789 7.93332 19.9281 8.03779 19.8581 8.12899C19.7881 8.2202 19.7003 8.29625 19.6 8.35254Z" fill="#F04F20" />
+                          </svg>
+                          metaleast@gmail.com
+                    </a>
+                </div>
+            </div>
+            <div class="footer-content__maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11987.062543718153!2d69.28329372136335!3d41.31396181463844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b2931f41f23%3A0x81095e06b654b845!2sAmir%20Temur%20xiyoboni!5e0!3m2!1suz!2s!4v1733315103857!5m2!1suz!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="footer__link">
+        <a href="https://kirano.uz/">Сайт разработан в Кирано</a>
+    </div>
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@24.7.0/build/js/intlTelInput.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="/js/app.js"></script>
+</body>
+</html>
